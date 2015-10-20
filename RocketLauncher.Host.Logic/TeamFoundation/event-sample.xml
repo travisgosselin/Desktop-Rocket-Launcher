@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<BuildCompletionEvent
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <BuildUri>vstfs:///Build/Build/53515</BuildUri>
+    <TeamFoundationServerUrl>http://qtitfs03:8080/tfs/DefaultCollection</TeamFoundationServerUrl>
+    <TeamProject>OneScreen</TeamProject>
+    <Id>OneScreen-App-Dev-Continuous_20141015.4</Id>
+    <Url>http://qtitfs03:8080/tfs/web/build.aspx?pcguid=4ed6e083-1605-43a3-987b-ca6107948895&amp;builduri=vstfs:///Build/Build/53515</Url>
+    <Title>OneScreen Build OneScreen-App-Dev-Continuous_20141015.4 Successfully Completed</Title>
+    <CompletionStatus>Successfully Completed</CompletionStatus>
+    <Subscriber>Travis</Subscriber>
+    <Configuration>OneScreen-App-Dev-Continuous</Configuration>
+    <RequestedBy>TOOLBOX\WChan</RequestedBy>
+    <TimeZone>Eastern Daylight Time</TimeZone>
+    <TimeZoneOffset>-04:00:00</TimeZoneOffset>
+    <BuildStartTime>10/15/2014 5:41:10 PM</BuildStartTime>
+    <BuildCompleteTime>10/15/2014 6:15:43 PM</BuildCompleteTime>
+    <BuildMachine>QTIBUILD03</BuildMachine>
+</BuildCompletionEvent>

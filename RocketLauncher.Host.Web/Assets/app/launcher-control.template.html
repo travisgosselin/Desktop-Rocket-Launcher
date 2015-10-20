@@ -1,0 +1,41 @@
+﻿<h2>Control Launcher - {{launcherName}}</h2>
+
+<div class="col-md-4" ng-init="sequences = []">
+
+    <h3>Send Command</h3>
+    <div class="arrows" style="margin-left: auto; margin-right: auto;">
+        <div class="arrow-up" ng-click="sendCommand('up')"></div>
+        <div class="arrow-left" ng-click="sendCommand('left')"></div>
+        <div class="arrow-stop" ng-click="sendCommand('stop')"></div>
+        <div class="arrow-right" ng-click="sendCommand('right')"></div>
+        <div class="arrow-down" ng-click="sendCommand('down')"></div>
+        <div class="arrow-fire" ng-click="sendCommand('fire')"></div>
+    </div>
+    <input class="btn btn-primary" style="margin-top: 10px;" type="button" value="Click here for Keyboard control..." tab-index="0" ng-keydown="onKeyDown($event)" ng-keyup="onKeyUp($event)" />
+
+    <h3>Send Sequences</h3>
+    <form class="form-inline">
+        <div ng-repeat="sequence in sequences" class="form-group" style="margin-bottom: 5px;">
+            <select class="form-control" style="width: 80px;" ng-model="sequence.command" ng-options="currOption for currOption in ['up', 'down', 'left', 'right', 'stop', 'fire', 'wait', 'ledOn', 'ledOff']"></select>
+            <input class="form-control" style="width: 80px;" type="text" placeholder="Length in MS" ng-model="sequence.length" />
+            <div class="btn btn-danger" ng-click="sequences.splice(sequences.indexOf(sequence), 1)">-</div>
+        </div>
+    </form>
+    <div class="btn btn-success" ng-click="sequences.push({ command: 'up', length: 500 })">Add</div>
+    <div class="btn btn-primary" ng-click="saveSequence(sequences)">Save</div>
+    <div class="btn btn-danger" ng-click="sendSequence(sequences)">Send Sequence</div>
+
+</div>
+
+<div class="col-md-8">
+    <h3>Saved Sequences</h3>
+    <div>
+        <div ng-repeat="saved in savedSequences" style="padding: 5px; border: 2px solid #428bca; margin: 5px; border-radius: 5px;">
+            <h4>{{saved.name}}</h4>
+            <div ng-repeat="item in saved.sequences">{{item.command}} - {{item.length}}</div>
+            <div class="btn btn-primary" value="Send Sequence" ng-click="sendSequence(saved.sequences)">Send Sequence</div>
+            <div class="btn btn-danger" ng-click="removeSequence(saved)">Remove</div>
+        </div>
+        <p ng-if="!savedSequences.length">Currently there are no saved sequences for this launcher.</p>
+    </div>
+</div>

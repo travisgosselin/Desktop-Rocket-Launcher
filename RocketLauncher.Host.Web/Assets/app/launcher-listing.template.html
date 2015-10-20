@@ -1,0 +1,22 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h2>Available Launcher List</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10">
+        <div class="lead">Choose an available launcher to control or configure.</div>
+    </div>
+    <div class="col-md-2">
+        <div class="btn btn-success" ng-click="createLauncher()">Create Launcher</div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div ng-repeat="launcher in launchers" class="clearfix">
+        <hr />
+        <div class="btn btn-primary pull-right" ng-click="selectLauncher(launcher)">Details</div>
+        <div class="btn btn-warning pull-right" ng-click="removeLauncher(launcher)">Remove</div>
+        <h4 ng-class="{ 'bg-warning' : launcher.isOnline }">{{launcher.name}} <span class="text-danger" ng-show="!launcher.isOnline">Not Online</span></h4>
+    </div>
+    <div class="danger" ng-if="!launchers.length">No available launchers in the system.</div>
+</div>

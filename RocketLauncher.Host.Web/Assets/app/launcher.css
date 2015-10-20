@@ -1,0 +1,72 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.arrows div {
+    cursor: pointer;
+}
+
+.arrow-up {
+    margin-left: 45px;
+    margin-bottom: 5px;
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #428bca;
+}
+
+.arrow-down {
+    margin-left: 45px;
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #428bca;
+}
+
+.arrow-right {
+    display: inline-block;
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 40px solid #428bca;
+}
+
+.arrow-left {
+    display: inline-block;
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent; 
+	border-right:40px solid #428bca;
+}
+
+.arrow-stop {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: #f0ad4e;
+}
+
+.arrow-fire {
+    margin-top: 10px;
+    height: 40px;
+    width: 160px;
+    background-color: #d9534f;
+}

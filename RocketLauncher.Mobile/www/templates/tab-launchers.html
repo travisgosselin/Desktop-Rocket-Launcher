@@ -1,0 +1,9 @@
+<ion-view view-title="Launchers">
+  <ion-content>
+    <div class="list list-inset">
+      <a class="item" ng-repeat="launcher in launchers" href="#/launcher/{{launcher.name}}">
+        {{ launcher.name }}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

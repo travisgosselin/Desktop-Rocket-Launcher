@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/RocketLauncher.Api/bin
+/RocketLauncher.Api/obj
+/RocketLauncher.Client.Console/bin
+/RocketLauncher.Client.Console/obj
+/RocketLauncher.Host.Contracts/bin
+/RocketLauncher.Host.Contracts/obj
+/RocketLauncher.Host.Data/bin
+/RocketLauncher.Host.Data/obj
+/RocketLauncher.Host.Logic/bin
+/RocketLauncher.Host.Logic/obj
+/RocketLauncher.Host.Tests/bin
+/RocketLauncher.Host.Tests/obj
+/RocketLauncher.Host.Web/bin
+/RocketLauncher.Host.Web/obj
+/RocketLauncher.Host.Web/Properties/PublishProfiles
+*.DotSettings
+*.user
+*.suo
