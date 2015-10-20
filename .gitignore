@@ -21,3 +21,4 @@
 *.DotSettings
 *.user
 *.suo
+/.vs/config/applicationhost.config
